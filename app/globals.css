@@ -6,3 +6,222 @@ body {
   min-height: 100%;
   background: #fbf8f4;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #24334a;
+  font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.media-home {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(238, 204, 198, .62), transparent 25rem),
+    #fffaf6;
+}
+
+.media-header {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-bottom: 1px solid #eadfd9;
+}
+
+.media-header > p {
+  margin: 0;
+  color: #677083;
+  font-size: 13px;
+}
+
+.media-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.media-brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.media-brand strong,
+.media-brand span {
+  display: block;
+}
+
+.media-brand strong {
+  font: 600 18px/1.1 Georgia, serif;
+  letter-spacing: .08em;
+}
+
+.media-brand span {
+  margin-top: 5px;
+  color: #cf7569;
+  font-size: 11px;
+}
+
+.media-hero {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 100px 0 80px;
+}
+
+.media-eyebrow,
+.guide-heading > p {
+  margin: 0 0 12px;
+  color: #cf7569;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.media-hero h1 {
+  margin: 0;
+  max-width: 850px;
+  font: 500 clamp(44px, 7vw, 84px)/1.23 "Yu Mincho", "Noto Serif JP", serif;
+  letter-spacing: -.04em;
+}
+
+.media-hero > p:last-child {
+  margin: 28px 0 0;
+  color: #677083;
+  font-size: 16px;
+}
+
+.guide-section {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 100px;
+}
+
+.guide-heading h2 {
+  margin: 0 0 30px;
+  font: 500 clamp(30px, 4vw, 48px)/1.3 "Yu Mincho", serif;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.guide-card {
+  min-height: 390px;
+  padding: 38px;
+  border: 1px solid #eadfd9;
+  border-radius: 22px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 18px 60px rgba(36, 51, 74, .07);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 70px rgba(36, 51, 74, .12);
+}
+
+.guide-card.lotion {
+  background: linear-gradient(150deg, #eef3eb, #fff 64%);
+}
+
+.guide-card.uv {
+  background: linear-gradient(150deg, #f8e6e1, #fff 64%);
+}
+
+.guide-status {
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #24334a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.guide-card small {
+  margin-top: 54px;
+  color: #677083;
+}
+
+.guide-card h3 {
+  margin: 10px 0 16px;
+  font: 500 clamp(29px, 3.7vw, 45px)/1.35 "Yu Mincho", serif;
+}
+
+.guide-card p {
+  margin: 0;
+  color: #677083;
+  line-height: 1.8;
+}
+
+.guide-card strong {
+  margin-top: auto;
+  padding-top: 32px;
+  color: #cf7569;
+  font-size: 14px;
+}
+
+.media-footer {
+  padding: 42px max(20px, calc((100% - 1120px) / 2));
+  background: #24334a;
+  color: rgba(255, 255, 255, .78);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 30px;
+  font-size: 12px;
+}
+
+.media-footer strong {
+  color: #fff;
+  font: 500 18px Georgia, serif;
+  letter-spacing: .08em;
+}
+
+.media-footer nav {
+  display: flex;
+  gap: 18px;
+}
+
+.media-footer span {
+  margin-left: auto;
+}
+
+@media (max-width: 720px) {
+  .media-header > p {
+    display: none;
+  }
+
+  .media-hero {
+    padding: 68px 0 56px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-card {
+    min-height: 340px;
+    padding: 28px;
+  }
+
+  .media-footer span {
+    width: 100%;
+    margin-left: 0;
+  }
+}

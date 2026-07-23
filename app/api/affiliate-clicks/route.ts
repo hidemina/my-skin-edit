@@ -2,7 +2,18 @@ import { desc, sql } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { affiliateClicks } from "../../../db/schema";
 
-const PRODUCTS = new Set(["biore", "skin-aqua", "anessa", "allie", "minon"]);
+const PRODUCTS = new Set([
+  "biore",
+  "skin-aqua",
+  "anessa",
+  "allie",
+  "minon",
+  "curel-lotion",
+  "minon-lotion",
+  "dprogram-lotion",
+  "ihada-lotion",
+  "arouge-lotion",
+]);
 const MAX_FIELD_LENGTH = 100;
 
 function clean(value: unknown) {
