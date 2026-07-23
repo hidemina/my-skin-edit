@@ -277,5 +277,29 @@
   </main>
 
   <footer><div class="wrap"><strong>MY SKIN EDIT</strong><br>肌に、いいほう。<br><br>© 2026 MY SKIN EDIT / DRY RUN</div></footer>
+  <script>
+    (() => {
+      const params = new URLSearchParams(window.location.search);
+      const attribution = {
+        utm_source: params.get("utm_source") || "",
+        utm_campaign: params.get("utm_campaign") || "",
+        utm_content: params.get("utm_content") || ""
+      };
+
+      document.querySelectorAll('a.shop[data-offer][data-product]').forEach((link) => {
+        link.addEventListener("click", () => {
+          const payload = JSON.stringify({
+            product: link.dataset.product,
+            offer: link.dataset.offer,
+            ...attribution
+          });
+          navigator.sendBeacon(
+            "/api/affiliate-clicks",
+            new Blob([payload], { type: "application/json" })
+          );
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
