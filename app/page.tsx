@@ -24,8 +24,15 @@ export default function Home() {
           <h2>商品テーマから選ぶ</h2>
         </div>
         <div className="guide-grid">
-          <a className="guide-card lotion" href="/lp/sensitive-lotion-5/">
+          <a className="guide-card cream" href="/lp/sensitive-moisturizer-5/">
             <span className="guide-status">NEW</span>
+            <small>化粧水のあと、うるおいを守る</small>
+            <h3>敏感肌向け乳液・クリーム<br />5商品比較</h3>
+            <p>乳液とクリームを、容量・医薬部外品・レフィル・使用感で比較。</p>
+            <strong>比較を見る →</strong>
+          </a>
+          <a className="guide-card lotion" href="/lp/sensitive-lotion-5/">
+            <span className="guide-status">SKIN CARE</span>
             <small>乾燥・肌荒れが気になる日に</small>
             <h3>敏感肌向け化粧水<br />5商品比較</h3>
             <p>しっとり感、医薬部外品、アルコール無添加、レフィルを比較。</p>
