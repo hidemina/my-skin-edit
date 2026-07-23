@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="30代の毎日に合わせて、日焼け止め5商品を容量・落とし方・耐水性・香りで比較。">
+  <title>30代の日焼け止め5選｜MY SKIN EDIT</title>
+  <style>
+    :root {
+      --ivory: #fff9f5;
+      --paper: #ffffff;
+      --navy: #24334a;
+      --coral: #e86f61;
+      --pink: #f4d7d2;
+      --greige: #a89c96;
+      --ink-soft: #586172;
+      --line: #eadfd9;
+      --shadow: 0 16px 50px rgba(36, 51, 74, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy);
+      background: var(--ivory);
+      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+      line-height: 1.75;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar {
+      background: var(--navy);
+      color: white;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-align: center;
+      padding: 8px 16px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(234, 223, 217, .85);
+      background: rgba(255, 249, 245, .92);
+      backdrop-filter: blur(14px);
+    }
+    .nav {
+      min-height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+    .brand-mark { width: 42px; height: 42px; border-radius: 50%; flex: 0 0 auto; }
+    .brand-copy { font-family: Georgia, "Times New Roman", serif; font-size: 19px; letter-spacing: .08em; line-height: 1.05; }
+    .brand-copy small { display: block; margin-top: 5px; font: 10px/1.2 "Yu Mincho", serif; letter-spacing: .12em; color: var(--coral); }
+    .nav-link { text-decoration: none; font-size: 13px; font-weight: 700; }
+    .hero { padding: 58px 0 44px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 52px; align-items: center; }
+    .eyebrow { color: var(--coral); font-size: 13px; font-weight: 800; letter-spacing: .13em; }
+    h1, h2, h3 { font-family: "Yu Mincho", "Noto Serif JP", serif; line-height: 1.35; }
+    h1 { margin: 14px 0 22px; font-size: clamp(38px, 5.2vw, 66px); letter-spacing: -.025em; }
+    h1 span { color: var(--coral); font-size: 1.1em; }
+    .lead { color: var(--ink-soft); font-size: 16px; max-width: 620px; }
+    .hero-notes { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+    .pill { padding: 7px 12px; border: 1px solid var(--pink); border-radius: 999px; background: white; font-size: 12px; font-weight: 700; }
+    .primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 6px;
+      background: var(--coral);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 10px 28px rgba(232, 111, 97, .22);
+    }
+    .hero-image {
+      min-height: 520px;
+      border-radius: 220px 220px 24px 24px;
+      background: linear-gradient(145deg, #f4d7d2, #fff 72%);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-image img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; }
+    .hero-card {
+      position: absolute;
+      left: 22px;
+      bottom: 22px;
+      background: rgba(255, 255, 255, .9);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.8);
+      padding: 16px 18px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    .hero-card strong { display: block; font-family: "Yu Mincho", serif; font-size: 22px; }
+    section { padding: 70px 0; }
+    .section-head { max-width: 760px; margin-bottom: 34px; }
+    .section-head h2 { margin: 8px 0 12px; font-size: clamp(30px, 4vw, 46px); }
+    .section-head p { color: var(--ink-soft); }
+    .quick-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .quick-card { background: white; border: 1px solid var(--line); padding: 18px; border-radius: 10px; min-height: 168px; }
+    .quick-card .num { color: var(--coral); font: 700 26px/1 "Yu Mincho", serif; }
+    .quick-card strong { display: block; margin: 10px 0 4px; font-size: 15px; }
+    .quick-card span { color: var(--ink-soft); font-size: 12px; }
+    .comparison { background: white; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+    table { width: 100%; min-width: 930px; border-collapse: collapse; background: white; }
+    th, td { padding: 16px 14px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 13px; }
+    th { background: #fdf1ed; font-size: 12px; letter-spacing: .04em; }
+    tr:last-child td { border-bottom: 0; }
+    .product-name { font-weight: 800; min-width: 210px; }
+    .scene-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .scene {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(36, 51, 74, .05);
+    }
+    .scene-label { color: var(--coral); font-size: 12px; font-weight: 900; letter-spacing: .1em; }
+    .scene h3 { font-size: 25px; margin: 8px 0 14px; }
+    .scene ul { padding-left: 1.2em; color: var(--ink-soft); font-size: 14px; }
+    .products { display: grid; gap: 22px; }
+    .product {
+      display: grid;
+      grid-template-columns: 108px 1fr auto;
+      gap: 24px;
+      align-items: center;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .product-mark {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--pink);
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      font: 800 25px/1 "Yu Mincho", serif;
+    }
+    .product h3 { margin: 0 0 8px; font-size: 22px; }
+    .specs { display: flex; flex-wrap: wrap; gap: 7px; }
+    .specs span { background: var(--ivory); border: 1px solid var(--line); border-radius: 4px; padding: 4px 8px; font-size: 11px; }
+    .fit { margin: 11px 0 0; color: var(--ink-soft); font-size: 13px; }
+    .product-actions { display: grid; gap: 8px; min-width: 168px; }
+    .official { white-space: nowrap; text-align: center; text-decoration: none; border: 1px solid var(--navy); border-radius: 6px; padding: 11px 15px; font-size: 12px; font-weight: 800; }
+    .shop { background: var(--coral); border-color: var(--coral); color: white; }
+    .notice { border-left: 4px solid var(--coral); background: #fff3ef; padding: 22px 24px; color: var(--ink-soft); font-size: 13px; }
+    .sources { font-size: 13px; color: var(--ink-soft); }
+    .sources li { margin-bottom: 8px; }
+    footer { background: var(--navy); color: rgba(255,255,255,.78); padding: 38px 0; font-size: 12px; }
+    footer strong { color: white; font-family: "Yu Mincho", serif; font-size: 18px; }
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .hero { padding-top: 36px; }
+      .hero-grid, .scene-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 32px; }
+      .hero-image, .hero-image img { min-height: 420px; }
+      .quick-grid { grid-template-columns: repeat(2, 1fr); }
+      .product { grid-template-columns: 72px 1fr; gap: 16px; }
+      .product .product-actions { grid-column: 1 / -1; }
+      section { padding: 52px 0; }
+    }
+    @media (max-width: 480px) {
+      .quick-grid { grid-template-columns: 1fr; }
+      .nav-link { display: none; }
+      h1 { font-size: 41px; }
+      .hero-image { border-radius: 150px 150px 18px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">PR｜本ページはアフィリエイト広告を利用しています</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><img class="brand-mark" src="../../assets/mse-avatar.png" alt=""><span class="brand-copy">MY SKIN EDIT<small>肌に、いいほう。</small></span></a>
+      <a class="nav-link" href="#compare">5商品の比較表を見る</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">30代の朝に、迷わないUV選び</div>
+          <h1>日焼け止め<br><span>5商品</span>を比較</h1>
+          <p class="lead">毎日用とレジャー用では、確認したい仕様が違います。容量・落とし方・耐水性・香りを、メーカー公式情報だけで整理しました。</p>
+          <div class="hero-notes">
+            <span class="pill">SPF・PA</span><span class="pill">耐水性</span><span class="pill">落とし方</span><span class="pill">香り</span><span class="pill">容量</span>
+          </div>
+          <a class="primary" href="#compare">3分で比較する</a>
+        </div>
+        <div class="hero-image">
+          <img src="../../assets/beauty-uv-hero.png" alt="朝の洗面台に並ぶブランド表記のない日焼け止め容器">
+          <div class="hero-card"><span>公式仕様を確認</span><strong>2026.07.22 更新</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">QUICK CHOICE</div><h2>先に、選び分けの結論</h2><p>順位ではなく、使う場面に合う候補を絞るための比較です。</p></div>
+        <div class="quick-grid">
+          <div class="quick-card"><span class="num">01</span><strong>軽さ・毎日用</strong><span>ビオレUV</span></div>
+          <div class="quick-card"><span class="num">02</span><strong>全身・容量</strong><span>スキンアクア</span></div>
+          <div class="quick-card"><span class="num">03</span><strong>汗・水・こすれ</strong><span>アネッサ</span></div>
+          <div class="quick-card"><span class="num">04</span><strong>摩擦・無香料</strong><span>アリィー</span></div>
+          <div class="quick-card"><span class="num">05</span><strong>処方表示を確認</strong><span>ミノン</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison" id="compare">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">OFFICIAL SPECS</div><h2>日焼け止め5商品 比較表</h2><p>価格は販売店や時期で変わるため固定せず、変わりにくい公式仕様を比較しています。</p></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>商品</th><th>容量・種類</th><th>SPF・PA</th><th>耐水性</th><th>落とし方</th><th>香り</th></tr></thead>
+            <tbody>
+              <tr><td class="product-name">ビオレUV アクアリッチ 水感エッセンス</td><td>70g<br>エッセンス</td><td>SPF50+<br>PA++++</td><td>UV耐水性★★</td><td>せっけん</td><td>公式ページで明示確認できず</td></tr>
+              <tr><td class="product-name">スキンアクア スーパーモイスチャーUVジェル</td><td>110g<br>ジェル</td><td>SPF50+<br>PA++++</td><td>UV耐水性★★</td><td>せっけん</td><td>無香料</td></tr>
+              <tr><td class="product-name">アネッサ パーフェクトUV スキンケアミルク NA</td><td>60mL<br>ミルク</td><td>SPF50+<br>PA++++</td><td>UV耐水性★★</td><td>せっけん</td><td>フローティーフローラル</td></tr>
+              <tr><td class="product-name">アリィー クロノビューティ ジェルUV EX</td><td>90g<br>ジェル</td><td>SPF50+<br>PA++++</td><td>スーパーウォータープルーフ</td><td>洗顔料・ボディソープ</td><td>無香料※</td></tr>
+              <tr><td class="product-name">ミノンUVマイルドミルク</td><td>80mL<br>ミルク・医薬部外品</td><td>SPF50+<br>PA++++</td><td>UV耐水性★★</td><td>全身洗浄料・洗顔料</td><td>無香料</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">※アリィーは、配合成分の特性により原料由来のにおいを感じる場合があります。</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">HOW TO CHOOSE</div><h2>毎日用とレジャー用を分ける</h2></div>
+        <div class="scene-grid">
+          <article class="scene"><span class="scene-label">DAILY</span><h3>通勤・買い物・日常</h3><ul><li>朝に塗り広げやすい種類か</li><li>普段の洗浄料で落とせるか</li><li>香りと容量が続けやすいか</li></ul></article>
+          <article class="scene"><span class="scene-label">OUTDOOR</span><h3>長時間の屋外・水辺</h3><ul><li>耐水性の表示を確認する</li><li>汗を拭いた後は塗り直す</li><li>こすれへの対応表示があるか</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">PRODUCT NOTES</div><h2>5商品の詳細と購入先</h2><p>購入前に公式仕様を確認し、価格・在庫は販売ページの最新表示をご確認ください。</p></div>
+        <div class="products">
+          <article class="product"><div class="product-mark">01</div><div><h3>ビオレUV アクアリッチ 水感エッセンス</h3><div class="specs"><span>70g</span><span>エッセンス</span><span>せっけん</span></div><p class="fit">軽くみずみずしい毎日用候補。</p></div><div class="product-actions"><a class="official shop" data-offer="rakuten" data-product="biore" href="https://hb.afl.rakuten.co.jp/hgc/g00r1368.1m9sl71d.g00r1368.1m9smb97/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4901301447647%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11317318%2F&amp;rafcid=wsc_i_is_783bf469-4fc7-4944-bf7f-937f8e3c9ad1" rel="sponsored nofollow noopener">楽天で価格を見る</a><a class="official" href="https://www.kao.co.jp/bioreuv/microuv/" rel="nofollow noopener">公式仕様を見る</a></div></article>
+          <article class="product"><div class="product-mark">02</div><div><h3>スキンアクア スーパーモイスチャーUVジェル</h3><div class="specs"><span>110g</span><span>ジェル</span><span>無香料</span></div><p class="fit">容量と全身への伸ばしやすさを重視する候補。</p></div><div class="product-actions"><a class="official shop" data-offer="rakuten" data-product="skin-aqua" href="https://hb.afl.rakuten.co.jp/hgc/g00r1368.1m9sl71d.g00r1368.1m9smb97/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4987241190850%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11169281%2F&amp;rafcid=wsc_i_is_783bf469-4fc7-4944-bf7f-937f8e3c9ad1" rel="sponsored nofollow noopener">楽天で価格を見る</a><a class="official" href="https://jp.rohto.com/skin-aqua/super-moisture/" rel="nofollow noopener">公式仕様を見る</a></div></article>
+          <article class="product"><div class="product-mark">03</div><div><h3>アネッサ パーフェクトUV スキンケアミルク NA</h3><div class="specs"><span>60mL</span><span>ミルク</span><span>UV耐水性★★</span></div><p class="fit">汗・水・こすれを想定する日の候補。</p></div><div class="product-actions"><a class="official shop" data-offer="rakuten" data-product="anessa" href="https://hb.afl.rakuten.co.jp/hgc/g00r1368.1m9sl71d.g00r1368.1m9smb97/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4909978147105%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11254952%2F&amp;rafcid=wsc_i_is_783bf469-4fc7-4944-bf7f-937f8e3c9ad1" rel="sponsored nofollow noopener">楽天で価格を見る</a><a class="official" href="https://www.shiseido.co.jp/anessa/products/suncare/perfect_uv_sm/" rel="nofollow noopener">公式仕様を見る</a></div></article>
+          <article class="product"><div class="product-mark">04</div><div><h3>アリィー クロノビューティ ジェルUV EX</h3><div class="specs"><span>90g</span><span>ジェル</span><span>無香料※</span></div><p class="fit">水・汗・摩擦と全身使用を重視する候補。</p></div><div class="product-actions"><a class="official shop" data-offer="rakuten" data-product="allie" href="https://hb.afl.rakuten.co.jp/hgc/g00r1368.1m9sl71d.g00r1368.1m9smb97/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4973167057742%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11097713%2F&amp;rafcid=wsc_i_is_783bf469-4fc7-4944-bf7f-937f8e3c9ad1" rel="sponsored nofollow noopener">楽天で価格を見る</a><a class="official" href="https://www.kanebo-cosmetics.jp/allie/product/item/item01/" rel="nofollow noopener">公式仕様を見る</a></div></article>
+          <article class="product"><div class="product-mark">05</div><div><h3>ミノンUVマイルドミルク</h3><div class="specs"><span>80mL</span><span>医薬部外品</span><span>無香料</span></div><p class="fit">紫外線吸収剤・アルコール不使用の公式表示を確認したい人の候補。</p></div><div class="product-actions"><a class="official shop" data-offer="rakuten" data-product="minon" href="https://hb.afl.rakuten.co.jp/hgc/g00r1368.1m9sl71d.g00r1368.1m9smb97/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4987107632203%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11100741%2F&amp;rafcid=wsc_i_is_783bf469-4fc7-4944-bf7f-937f8e3c9ad1" rel="sponsored nofollow noopener">楽天で価格を見る</a><a class="official" href="https://www.daiichisankyo-hc.co.jp/products/details/minon_uv_milk/" rel="nofollow noopener">公式仕様を見る</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="notice"><strong>選定・表現について</strong><br>本ページはメーカー公式情報の整理を目的とし、効果や使用感を保証するものではありません。肌に異常が生じた場合は使用を中止し、商品表示に従ってください。「敏感肌なら必ず合う」「焼けない」などの断定は行いません。</div>
+        <div class="section-head" style="margin-top:42px"><h2>参照した公式情報</h2></div>
+        <ol class="sources">
+          <li><a href="https://www.kao.co.jp/bioreuv/microuv/">花王｜ビオレUV アクアリッチ 水感エッセンス</a></li>
+          <li><a href="https://jp.rohto.com/skin-aqua/super-moisture/">ロート製薬｜スキンアクア スーパーモイスチャーUVジェル</a></li>
+          <li><a href="https://www.shiseido.co.jp/anessa/products/suncare/perfect_uv_sm/">資生堂｜アネッサ パーフェクトUV スキンケアミルク NA</a></li>
+          <li><a href="https://www.kanebo-cosmetics.jp/allie/product/item/item01/">カネボウ化粧品｜アリィー クロノビューティ ジェルUV EX</a></li>
+          <li><a href="https://www.daiichisankyo-hc.co.jp/products/details/minon_uv_milk/">第一三共ヘルスケア｜ミノンUVマイルドミルク</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><strong>MY SKIN EDIT</strong><br>肌に、いいほう。<br><br>© 2026 MY SKIN EDIT / DRY RUN</div></footer>
+</body>
+</html>
