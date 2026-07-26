@@ -1,0 +1,30 @@
+.affiliate-click-card {
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.affiliate-click-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(124, 20, 40, .34) !important;
+  box-shadow: 0 18px 46px rgba(73, 43, 45, .12) !important;
+}
+
+.affiliate-click-card:has(a[data-offer]:focus-visible) {
+  outline: 3px solid rgba(124, 20, 40, .42);
+  outline-offset: 4px;
+}
+
+.pin-gallery > a {
+  display: block;
+  border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.pin-gallery > a:hover {
+  transform: translateY(-3px);
+}
+
+.pin-gallery > a:focus-visible {
+  outline: 3px solid rgba(124, 20, 40, .42);
+  outline-offset: 4px;
+}
