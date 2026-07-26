@@ -121,6 +121,9 @@
   </style>
   <style>
     .pin-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .pin-gallery a { display:block; border-radius:16px; transition:transform .2s ease, box-shadow .2s ease; }
+    .pin-gallery a:hover { transform:translateY(-3px); }
+    .pin-gallery a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
     .pin-gallery img { display:block; width:100%; border-radius:16px; box-shadow:var(--shadow); }
     @media(max-width:800px){ .pin-gallery { grid-template-columns:1fr; } }
   </style>
@@ -209,9 +212,9 @@
       <div class="wrap">
         <div class="section-head"><div class="eyebrow">SAVE FOR LATER</div><h2>Pinterestで見返す</h2><p>比較ポイントを保存して、購入前の確認にお使いください。</p></div>
         <div class="pin-gallery">
-          <img src="../../pins/beauty-lotion-5-v1-01.png" alt="乾燥・肌荒れが気になる日に選ぶ敏感肌向け化粧水5選">
-          <img src="../../pins/beauty-lotion-5-v1-02.png" alt="しっとり感で選び分ける敏感肌向け化粧水5選">
-          <img src="../../pins/beauty-lotion-5-v1-03.png" alt="無添加表示と医薬部外品を確認する敏感肌向け化粧水5選">
+          <a href="https://jp.pinterest.com/pin/893260907360570946/" target="_blank" rel="noopener" aria-label="乾燥・肌荒れが気になる日に選ぶ敏感肌向け化粧水5選をPinterestで見る"><img src="../../pins/beauty-lotion-5-v1-01.png" alt="乾燥・肌荒れが気になる日に選ぶ敏感肌向け化粧水5選"></a>
+          <a href="https://jp.pinterest.com/pin/893260907360570962/" target="_blank" rel="noopener" aria-label="しっとり感で選び分ける敏感肌向け化粧水5選をPinterestで見る"><img src="../../pins/beauty-lotion-5-v1-02.png" alt="しっとり感で選び分ける敏感肌向け化粧水5選"></a>
+          <a href="https://jp.pinterest.com/pin/893260907360570969/" target="_blank" rel="noopener" aria-label="無添加表示と医薬部外品を確認する敏感肌向け化粧水5選をPinterestで見る"><img src="../../pins/beauty-lotion-5-v1-03.png" alt="無添加表示と医薬部外品を確認する敏感肌向け化粧水5選"></a>
         </div>
       </div>
     </section>
