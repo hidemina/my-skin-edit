@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-07-26",
+  "notes": [
+    "商品画像は楽天アフィリエイトの商品リンク作成画面が提供する画像URLを使用する。",
+    "価格・在庫・送料は変動するため、LPではリンク先での確認を案内する。",
+    "なめらか本舗は楽天内の公式店が確認できなかったため、丸井楽天市場店を採用した。"
+  ],
+  "products": [
+    {
+      "id": "nameraka-wrinkle-eye-n",
+      "name": "なめらか本舗 リンクルアイクリーム N",
+      "shop": "丸井（マルイ）楽天市場店",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/ichiba/5612571a.13c1640c.5612571b.0737a6a5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F0101marui%2Fcb003384970101%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D",
+      "image_url": "https://hbb.afl.rakuten.co.jp/hgb/5612571a.13c1640c.5612571b.0737a6a5/?me_id=1265372&item_id=11895624&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2F0101marui%2Fcabinet%2Fcb003%2F384%2F974964596485794_5.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+    },
+    {
+      "id": "attenir-eye-wrinkle-serum",
+      "name": "アテニア アイ リンクルセラム",
+      "shop": "アテニア公式ショップ 楽天市場店",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/ichiba/56091aed.fdebf6d1.56091aee.d6088e4b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fattenir%2F161604%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D",
+      "image_url": "https://hbb.afl.rakuten.co.jp/hgb/56091aed.fdebf6d1.56091aee.d6088e4b/?me_id=1383198&item_id=10000546&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fattenir%2Fcabinet%2Fthum%2Fthum%2F161604_voce_2512.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+    },
+    {
+      "id": "obagi-stem-sharp-eye",
+      "name": "オバジ ダーマパワーX ステムシャープアイ",
+      "shop": "ファンシーコスメ",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/ichiba/5609224e.7d1ad64b.5609224f.bd11c339/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffancylifecosme%2F4987241159741%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D",
+      "image_url": "https://hbb.afl.rakuten.co.jp/hgb/5609224e.7d1ad64b.5609224f.bd11c339/?me_id=1384013&item_id=10000024&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Ffancylifecosme%2Fcabinet%2F12759776%2F15974-rank.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+    },
+    {
+      "id": "elixir-retino-power-ba-s",
+      "name": "エリクシール レチノパワー リンクルクリーム ba S",
+      "shop": "楽天24",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/ichiba/56044413.31dd9c51.56044414.415bba89/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4909978214906%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D",
+      "image_url": "https://hbb.afl.rakuten.co.jp/hgb/56044413.31dd9c51.56044414.415bba89/?me_id=1261122&item_id=11354092&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Frakuten24%2Fcabinet%2F906%2F4909978214906.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+    },
+    {
+      "id": "pola-wrinkle-shot-n",
+      "name": "ポーラ リンクルショット メディカル セラム N",
+      "shop": "POLA公式／Rakuten Fashion",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/ichiba/561258e5.33210a53.561258e6.a1f29a48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstylife%2Fpb6993%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D",
+      "image_url": "https://hbb.afl.rakuten.co.jp/hgb/561258e5.33210a53.561258e6.a1f29a48/?me_id=1279405&item_id=15079933&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fstylife%2Fcabinet%2Fitem%2F993%2Fpb6993-01_1.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+    }
+  ]
+}
