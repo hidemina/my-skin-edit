@@ -60,3 +60,16 @@
 - P3: カテゴリごとに人物の顔立ちは異なる。各カテゴリ内の一貫性は維持されており、編集媒体として許容範囲。
 
 final result: passed
+
+## 2026-07-28 日本語改行QA
+
+- 対象: アイケアLPを除く10LP
+- 修正前の問題: 語句の途中、読点直後、末尾1文字だけで改行されていた
+- 修正: ヒーロー見出しとストーリー見出しを、意味のまとまりごとの改行へ統一
+- 本文: `line-break: strict` と `text-wrap: pretty` を適用
+- 公開環境: 10/10 LPでストーリー見出しが各2行、横方向のはみ出し0px
+- ビルド: `npm.cmd run build` passed
+- 公開コミット: `5d99024`
+- 確認URL: `https://hidemina.github.io/my-skin-edit/lp/dry-skin-toner-5/`
+
+final result: passed
