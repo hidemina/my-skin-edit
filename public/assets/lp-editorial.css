@@ -61,6 +61,79 @@ body {
   object-position: center top;
 }
 
+.editorial-story {
+  padding: 18px 0 78px;
+}
+
+.editorial-story__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 76px);
+  padding: clamp(24px, 4vw, 48px) 0;
+}
+
+.editorial-story__grid--reverse {
+  grid-template-columns: minmax(320px, .95fr) minmax(0, 1.05fr);
+}
+
+.editorial-story__grid--reverse .editorial-story__image {
+  order: 2;
+}
+
+.editorial-story__image {
+  position: relative;
+  margin: 0;
+  min-height: 430px;
+  overflow: hidden;
+  border: 1px solid var(--mse-line);
+  border-radius: 28px;
+  background: #f5eeea;
+  box-shadow: 0 24px 60px rgba(73, 43, 45, .12);
+}
+
+.editorial-story__image img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  display: block;
+  object-fit: cover;
+}
+
+.editorial-story__image--problem img {
+  object-position: center center;
+}
+
+.editorial-story__image--benefit img {
+  object-position: center top;
+}
+
+.editorial-story__copy {
+  padding: clamp(8px, 3vw, 30px);
+}
+
+.editorial-story__copy h2 {
+  margin: 10px 0 18px;
+  color: var(--mse-ink);
+  font: 500 clamp(30px, 4.5vw, 52px)/1.42 "Yu Mincho", "Noto Serif JP", serif;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+
+.editorial-story__copy p:not(.eyebrow) {
+  margin: 0;
+  color: #6f6264;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.editorial-story__copy .editorial-story__accent {
+  display: block;
+  margin-top: 24px;
+  color: var(--mse-wine);
+  font: 500 20px/1.7 "Yu Mincho", "Noto Serif JP", serif;
+}
+
 .hero > .wrap > .hero-art,
 .hero > .wrap > .visual,
 .hero > .wrap > .shelf,
@@ -190,5 +263,30 @@ body {
 
   .editorial-guide__grid {
     grid-template-columns: 1fr;
+  }
+
+  .editorial-story {
+    padding-bottom: 52px;
+  }
+
+  .editorial-story__grid,
+  .editorial-story__grid--reverse {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px 0 34px;
+  }
+
+  .editorial-story__grid--reverse .editorial-story__image {
+    order: 0;
+  }
+
+  .editorial-story__image,
+  .editorial-story__image img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .editorial-story__image {
+    border-radius: 20px;
   }
 }
