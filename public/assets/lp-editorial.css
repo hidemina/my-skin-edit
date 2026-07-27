@@ -112,26 +112,36 @@ body {
   padding: clamp(8px, 3vw, 30px);
 }
 
-.editorial-story__copy h2 {
+.editorial-lp-refresh .editorial-story__copy h2 {
   margin: 10px 0 18px;
   color: var(--mse-ink);
-  font: 500 clamp(30px, 4.5vw, 52px)/1.42 "Yu Mincho", "Noto Serif JP", serif;
-  letter-spacing: -.035em;
-  text-wrap: balance;
+  font: 500 clamp(30px, 3.45vw, 44px)/1.52 "Yu Mincho", "Noto Serif JP", serif;
+  letter-spacing: -.025em;
 }
 
-.editorial-story__copy p:not(.eyebrow) {
+.editorial-lp-refresh .editorial-story__copy h2 span {
+  display: block;
+  word-break: keep-all;
+}
+
+.editorial-lp-refresh .editorial-story__copy p:not(.eyebrow) {
   margin: 0;
   color: #6f6264;
   font-size: 15px;
   line-height: 2;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
-.editorial-story__copy .editorial-story__accent {
+.editorial-lp-refresh .editorial-story__copy .editorial-story__accent {
   display: block;
   margin-top: 24px;
   color: var(--mse-wine);
-  font: 500 20px/1.7 "Yu Mincho", "Noto Serif JP", serif;
+  font: 500 18px/1.85 "Yu Mincho", "Noto Serif JP", serif;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 .hero > .wrap > .hero-art,
@@ -141,15 +151,26 @@ body {
   display: none !important;
 }
 
-.hero h1,
-.wrap.hero h1 {
+.editorial-lp-refresh .hero h1,
+.editorial-lp-refresh .wrap.hero h1 {
   color: var(--mse-ink);
-  text-wrap: balance;
+  font-size: clamp(40px, 5vw, 62px) !important;
+  line-height: 1.38 !important;
+  letter-spacing: -.035em;
+  line-break: strict;
+  word-break: keep-all;
 }
 
-.hero h1 span,
-.wrap.hero h1 span {
+.editorial-lp-refresh .hero h1 span,
+.editorial-lp-refresh .wrap.hero h1 span {
   color: var(--mse-wine) !important;
+}
+
+.editorial-lp-refresh .hero .lead,
+.editorial-lp-refresh .wrap.hero .lead {
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 .primary,
@@ -245,6 +266,17 @@ body {
 }
 
 @media (max-width: 760px) {
+  .editorial-lp-refresh .hero h1,
+  .editorial-lp-refresh .wrap.hero h1 {
+    font-size: clamp(36px, 10.5vw, 46px) !important;
+    line-height: 1.42 !important;
+  }
+
+  .editorial-lp-refresh .editorial-story__copy h2 {
+    font-size: clamp(29px, 8.6vw, 38px);
+    line-height: 1.52;
+  }
+
   .wrap.hero,
   .hero .hero-grid {
     grid-template-columns: 1fr !important;

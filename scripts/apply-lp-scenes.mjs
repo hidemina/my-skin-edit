@@ -104,9 +104,85 @@ const pages = {
   },
 };
 
+const typography = {
+  "pore-cleansing-5": {
+    hero: "30代の毛穴<br>クレンジング5選",
+    concern: ["落としたはずなのに、", "毛穴が気になる。"],
+    benefit: ["落とす時間を、", "肌をいたわる習慣へ。"],
+  },
+  "dry-skin-toner-5": {
+    hero: "乾燥肌向け<br>化粧水5選",
+    concern: ["化粧水を重ねても、", "頬がつっぱる。"],
+    benefit: ["うるおいを重ねて、", "やわらかな印象へ。"],
+  },
+  "brightening-serum-5": {
+    hero: "シミ・くすみ対策<br>美容液5選",
+    concern: ["顔色が冴えない。", "点も影も気になる。"],
+    benefit: ["明るい印象は、", "目的に合う1本から。"],
+  },
+  "pore-face-wash-5": {
+    hero: "毛穴ケア<br>洗顔5選",
+    concern: ["洗うほど、", "毛穴が気になってしまう。"],
+    benefit: ["朝の素肌を、", "軽やかな気分で始める。"],
+  },
+  "korean-serum-5": {
+    hero: "韓国コスメ<br>美容液5選",
+    concern: ["話題の商品が多すぎて、", "選べない。"],
+    benefit: ["流行ではなく、", "なりたい肌印象で選ぶ。"],
+  },
+  "daily-uv-5": {
+    concern: ["毎日使うから、", "妥協したくない。"],
+    benefit: ["日差しの中でも、", "自分らしく軽やかに。"],
+  },
+  "sensitive-moisturizer-5": {
+    concern: ["乾燥するのに、", "重さや刺激も気になる。"],
+    benefit: ["夜の保湿を、", "ほっとできる時間へ。"],
+  },
+  "sensitive-lotion-5": {
+    concern: ["赤みや乾燥で、", "いつもの化粧水が不安。"],
+    benefit: ["毎日迷わず手に取れる、", "安心感を。"],
+  },
+  "cleansing-5": {
+    concern: ["きれいに落としたい。", "でも乾燥は避けたい。"],
+    benefit: ["一日の終わりを、", "心地よくリセット。"],
+  },
+  "serum-pore-5": {
+    concern: ["毛穴、キメ、乾燥。", "悩みが一つではない。"],
+    benefit: ["悩みを整理すると、", "選ぶ1本が見えてくる。"],
+  },
+};
+
+const lineTitle = (lines) =>
+  lines.map((line) => `<span>${line}</span>`).join("");
+
 for (const [slug, copy] of Object.entries(pages)) {
   const file = join("public", "lp", slug, "index.html");
   let html = await readFile(file, "utf8");
+  const type = typography[slug];
+
+  html = html.replace(/<body([^>]*)>/, (body, attrs) => {
+    if (attrs.includes("editorial-lp-refresh")) return body;
+    if (attrs.includes("class=")) {
+      return `<body${attrs.replace(/class="([^"]*)"/, 'class="$1 editorial-lp-refresh"')}>`;
+    }
+    return `<body class="editorial-lp-refresh"${attrs}>`;
+  });
+
+  html = html.replace(
+    `<h2>${copy.concernTitle}</h2>`,
+    `<h2>${lineTitle(type.concern)}</h2>`,
+  );
+  html = html.replace(
+    `<h2>${copy.benefitTitle}</h2>`,
+    `<h2>${lineTitle(type.benefit)}</h2>`,
+  );
+
+  if (type.hero) {
+    html = html.replace(
+      /(<section class="wrap hero">[\s\S]*?<h1>)[\s\S]*?(<\/h1>)/,
+      `$1${type.hero}$2`,
+    );
+  }
   html = html.replaceAll(
     `../../assets/lp-scenes/${slug}/concern.png`,
     `../../assets/lp-scenes/${slug}/concern.webp`,
