@@ -73,6 +73,10 @@ body {
   padding: clamp(24px, 4vw, 48px) 0;
 }
 
+.editorial-story__grid > * {
+  min-width: 0;
+}
+
 .editorial-story__grid--reverse {
   grid-template-columns: minmax(320px, .95fr) minmax(0, 1.05fr);
 }
@@ -309,8 +313,13 @@ body {
   }
 
   .editorial-lp-refresh .editorial-story__copy h2 {
-    font-size: clamp(29px, 8.6vw, 38px);
+    font-size: clamp(25px, 7.2vw, 32px);
     line-height: 1.52;
+  }
+
+  .editorial-lp-refresh .editorial-story__copy h2 span {
+    word-break: normal;
+    overflow-wrap: anywhere;
   }
 
   .wrap.hero,
