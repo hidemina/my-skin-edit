@@ -269,6 +269,80 @@ body {
   box-shadow: 0 14px 40px rgba(73, 43, 45, .06);
 }
 
+.asp-pick {
+  padding: 68px 0;
+  border-block: 1px solid var(--mse-line);
+  background: linear-gradient(135deg, #f8eeeb, #fffaf7 62%, #fff);
+}
+
+.asp-pick__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(220px, 330px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 72px);
+}
+
+.asp-pick__image {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--mse-line);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(73, 43, 45, .12);
+}
+
+.asp-pick__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.asp-pick h2 {
+  margin: 8px 0 16px;
+  color: var(--mse-ink);
+  font: 500 clamp(30px, 4.2vw, 50px)/1.45 "Yu Mincho", "Noto Serif JP", serif;
+  letter-spacing: -.03em;
+}
+
+.asp-pick p:not(.eyebrow) {
+  max-width: 660px;
+  color: #6f6264;
+  line-height: 1.95;
+}
+
+.asp-pick__cta {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #89182d, #671020);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 14px 28px rgba(124, 20, 40, .2);
+}
+
+.asp-pick small {
+  display: block;
+  margin-top: 14px;
+  color: #887a7d;
+  font-size: 11px;
+}
+
+.a8-ad {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-offer-bar {
+  display: none;
+}
+
 .product:has(> .product-photo) {
   grid-template-columns: minmax(140px, 180px) minmax(0, 1fr) auto !important;
 }
@@ -408,6 +482,10 @@ body {
 }
 
 @media (max-width: 760px) {
+  body {
+    padding-bottom: 82px;
+  }
+
   .editorial-lp-refresh .hero h1,
   .editorial-lp-refresh .wrap.hero h1 {
     font-size: clamp(36px, 10.5vw, 46px) !important;
@@ -501,5 +579,76 @@ body {
 
   .conversion-bridge__cta {
     width: 100%;
+  }
+
+  .asp-pick {
+    padding: 50px 0;
+  }
+
+  .asp-pick__grid {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .asp-pick h2 {
+    font-size: 25px;
+  }
+
+  .asp-pick p:not(.eyebrow),
+  .asp-pick small {
+    grid-column: 1 / -1;
+  }
+
+  .asp-pick__cta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mobile-offer-bar {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 12px 11px 16px;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 16px;
+    background: rgba(36, 31, 35, .95);
+    color: #fff;
+    box-shadow: 0 18px 45px rgba(35, 25, 29, .28);
+    backdrop-filter: blur(14px);
+  }
+
+  .mobile-offer-bar span {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-offer-bar small {
+    display: block;
+    color: #e9b6bd;
+    font-size: 9px;
+    letter-spacing: .08em;
+  }
+
+  .mobile-offer-bar a {
+    flex: 0 0 auto;
+    padding: 11px 15px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #9b2038, #761428);
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
   }
 }

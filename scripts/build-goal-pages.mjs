@@ -116,7 +116,7 @@ function renderCategory(category) {
       <article class="product">
         <div class="product-no"><div><small>EDIT ${String(index + 1).padStart(2, "0")}</small><span>${index + 1}</span></div></div>
         <div><p class="meta">${esc(product.type)}・${esc(product.size)}</p><h3>${esc(product.name)}</h3><p>${esc(product.note)}</p></div>
-        <a class="button" data-offer="rakuten" data-product="${esc(product.id)}" href="${esc(product.affiliate)}" rel="nofollow sponsored noopener">楽天で確認する</a>
+        <a class="button" data-offer="${esc(product.offer || "rakuten")}" data-product="${esc(product.id)}" href="${esc(product.affiliate)}" rel="nofollow sponsored noopener">${esc(product.cta || "楽天で確認する")}</a>
       </article>`).join("");
   const html = `<!doctype html>
 <html lang="ja"><head>${commonHead(category.title, category.lead)}
