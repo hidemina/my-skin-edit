@@ -305,6 +305,108 @@ body {
   outline-offset: 3px;
 }
 
+.conversion-bridge {
+  padding: 76px 0;
+  background:
+    radial-gradient(circle at 8% 12%, color-mix(in srgb, var(--theme, #8b1e32) 9%, transparent), transparent 28%),
+    linear-gradient(180deg, #fff 0%, color-mix(in srgb, var(--pale, #f7efec) 70%, #fff) 100%);
+  border-block: 1px solid var(--line, #eaded8);
+}
+
+.conversion-bridge__intro {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.conversion-bridge__intro h2 {
+  margin: 0;
+  font: 500 clamp(30px, 4vw, 48px)/1.45 "Yu Mincho", "Noto Serif JP", serif;
+  letter-spacing: -.025em;
+}
+
+.conversion-bridge__intro p {
+  margin: 18px auto 0;
+  max-width: 650px;
+  color: var(--muted, #687085);
+  line-height: 1.95;
+}
+
+.conversion-bridge__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.conversion-bridge__card {
+  padding: 26px;
+  border: 1px solid var(--line, #eaded8);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 14px 40px rgba(42, 35, 40, .055);
+}
+
+.conversion-bridge__card > span {
+  color: var(--theme, #8b1e32);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.conversion-bridge__card h3 {
+  margin: 10px 0 12px;
+  font: 500 23px/1.55 "Yu Mincho", "Noto Serif JP", serif;
+}
+
+.conversion-bridge__card p {
+  margin: 0;
+  color: var(--muted, #687085);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.conversion-bridge__card strong {
+  display: block;
+  margin-top: 16px;
+  color: var(--theme, #8b1e32);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.conversion-bridge__close {
+  margin: 26px auto 0;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 20px;
+  background: var(--ink, #253048);
+  color: #fff;
+  text-align: center;
+}
+
+.conversion-bridge__close p {
+  margin: 0 0 18px;
+  font: 500 clamp(18px, 2.4vw, 25px)/1.75 "Yu Mincho", "Noto Serif JP", serif;
+}
+
+.conversion-bridge__cta {
+  display: inline-block;
+  padding: 15px 24px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink, #253048);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.conversion-bridge__close small {
+  display: block;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, .72);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
 @media (max-width: 760px) {
   .editorial-lp-refresh .hero h1,
   .editorial-lp-refresh .wrap.hero h1 {
@@ -375,5 +477,29 @@ body {
   .product:has(> .product-photo) .product-actions,
   .product:has(> .product-photo) > .button {
     grid-column: 1 / -1;
+  }
+
+  .conversion-bridge {
+    padding: 54px 0;
+  }
+
+  .conversion-bridge__intro {
+    text-align: left;
+  }
+
+  .conversion-bridge__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .conversion-bridge__card {
+    padding: 22px;
+  }
+
+  .conversion-bridge__close {
+    padding: 22px 18px;
+  }
+
+  .conversion-bridge__cta {
+    width: 100%;
   }
 }
