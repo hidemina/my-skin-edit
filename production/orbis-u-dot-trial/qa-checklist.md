@@ -9,10 +9,33 @@
 - [x] AI女性モデルであることを明示
 - [x] PR・アフィリエイト広告表記を掲載
 - [x] felmatインプレッションピクセルを掲載
-- [ ] デスクトップ表示
-- [ ] スマホ表示
-- [ ] CTA全件の遷移
-- [ ] GitHub Pages公開
-- [ ] ピン3枚制作
-- [ ] Pinterest投稿
-- [ ] 公開ピン→LP→公式ページの導線確認
+- [x] デスクトップ表示
+- [x] スマホ表示
+- [x] CTA全件の遷移
+- [x] GitHub Pages公開
+- [x] ピン3枚制作
+- [x] Pinterest投稿
+- [x] 公開ピン→LP→公式ページの導線確認
+
+## 公開・導線確認記録（2026-07-31）
+
+- GitHub Pages: `https://hidemina.github.io/my-skin-edit/lp/orbis-u-dot-trial/`
+  - HTTP 200
+  - 公開タイトル: `オルビスユー ドット7日間体験セット｜MY SKIN EDIT`
+  - CTA 3件すべてがfelmat収益リンクへ設定済み
+  - felmat計測ピクセル1件を1×1画像として読込確認
+- スマホ表示: 390×844pxで検品
+  - 文書幅375px、本文幅375px、横スクロールなし
+  - 文字・CTAのはみ出しなし
+  - 人物画像、商品画像、遅延読込画像の読込完了
+- felmat収益リンク: `https://t.felmat.net/fmcl?ak=J4981V.1.7111727B.D139341N`
+  - 遷移先タイトル: `オルビス｜オルビスユードット`
+  - 遷移先: `https://pr.orbis.co.jp/cosmetics/udot/100/`
+- Pinterestボード: `大人のスキンケア選び`
+- 公開ピン1: `https://jp.pinterest.com/pin/893260907360799891/`
+  - `utm_content=pin01_problem`付きLPへのリンクを確認
+- 公開ピン2: `https://jp.pinterest.com/pin/893260907360799914/`
+  - `utm_content=pin02_routine`付きLPへのリンクを確認
+- 公開ピン3: `https://jp.pinterest.com/pin/893260907360799936/`
+  - `utm_content=pin03_trial`付きLPへのリンクを確認
+- 3件とも、公開ピン → 固有UTM付きLP → felmat収益リンク → オルビス公式LPの遷移を確認
