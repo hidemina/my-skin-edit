@@ -1,0 +1,144 @@
+{
+  "slug": "replace-with-category-5",
+  "category": "カテゴリ名",
+  "eyebrow": "BEAUTY EDIT",
+  "titleLines": [
+    "悩みを言葉にした1行目",
+    "商品カテゴリ5選"
+  ],
+  "lead": "誰の、どんな迷いを、何で比較して解決する記事なのかを80文字以内で書きます。",
+  "theme": {
+    "accent": "#8f2638",
+    "pale": "#f8edef"
+  },
+  "scenes": {
+    "hero": {
+      "image": "/assets/lp-scenes/replace-with-category-5/hero.webp",
+      "alt": "30代日本人女性が肌の状態を鏡で確認している様子"
+    },
+    "concern": {
+      "image": "/assets/lp-scenes/replace-with-category-5/concern.webp",
+      "alt": "肌悩みが気になる30代日本人女性",
+      "titleLines": [
+        "あ、これ私のことかも。",
+        "と感じる悩みの言語化"
+      ],
+      "body": "生活場面と肌悩みを結びつけ、読者が自分ごと化できる文章を書きます。",
+      "accent": "今の肌を知ることが、選び方の第一歩です。"
+    },
+    "benefit": {
+      "image": "/assets/lp-scenes/replace-with-category-5/benefit.webp",
+      "alt": "自分に合う商品を選べて穏やかに過ごす30代日本人女性",
+      "titleLines": [
+        "選び方が分かると、",
+        "毎日のケアが少し軽くなる。"
+      ],
+      "body": "効果を断定せず、選べる安心感や続けやすさなど生活上のベネフィットを書きます。",
+      "accent": "価格ではなく、今の肌と生活に合う一本へ。"
+    }
+  },
+  "selectionAxes": [
+    {
+      "label": "悩み",
+      "description": "何を優先して選ぶか"
+    },
+    {
+      "label": "使用感",
+      "description": "毎日無理なく続けられるか"
+    },
+    {
+      "label": "価格",
+      "description": "継続できる購入条件か"
+    }
+  ],
+  "products": [
+    {
+      "id": "product-01",
+      "name": "商品名1",
+      "image": "/assets/products/replace-with-category-5/01.jpg",
+      "affiliateUrl": "https://example.com/product-01",
+      "merchant": "購入先",
+      "specs": [
+        "容量",
+        "分類",
+        "特徴"
+      ],
+      "recommendedFor": "この商品を選ぶ理由と、向いている人を短く書きます。",
+      "sourceUrl": "https://example.com/official-01"
+    },
+    {
+      "id": "product-02",
+      "name": "商品名2",
+      "image": "/assets/products/replace-with-category-5/02.jpg",
+      "affiliateUrl": "https://example.com/product-02",
+      "merchant": "購入先",
+      "specs": [
+        "容量",
+        "分類",
+        "特徴"
+      ],
+      "recommendedFor": "この商品を選ぶ理由と、向いている人を短く書きます。",
+      "sourceUrl": "https://example.com/official-02"
+    },
+    {
+      "id": "product-03",
+      "name": "商品名3",
+      "image": "/assets/products/replace-with-category-5/03.jpg",
+      "affiliateUrl": "https://example.com/product-03",
+      "merchant": "購入先",
+      "specs": [
+        "容量",
+        "分類",
+        "特徴"
+      ],
+      "recommendedFor": "この商品を選ぶ理由と、向いている人を短く書きます。",
+      "sourceUrl": "https://example.com/official-03"
+    },
+    {
+      "id": "product-04",
+      "name": "商品名4",
+      "image": "/assets/products/replace-with-category-5/04.jpg",
+      "affiliateUrl": "https://example.com/product-04",
+      "merchant": "購入先",
+      "specs": [
+        "容量",
+        "分類",
+        "特徴"
+      ],
+      "recommendedFor": "この商品を選ぶ理由と、向いている人を短く書きます。",
+      "sourceUrl": "https://example.com/official-04"
+    },
+    {
+      "id": "product-05",
+      "name": "商品名5",
+      "image": "/assets/products/replace-with-category-5/05.jpg",
+      "affiliateUrl": "https://example.com/product-05",
+      "merchant": "購入先",
+      "specs": [
+        "容量",
+        "分類",
+        "特徴"
+      ],
+      "recommendedFor": "この商品を選ぶ理由と、向いている人を短く書きます。",
+      "sourceUrl": "https://example.com/official-05"
+    }
+  ],
+  "pins": [
+    {
+      "angle": "悩み訴求",
+      "headline": "悩みを自分ごと化する見出し",
+      "subheadline": "比較する理由を短く補足"
+    },
+    {
+      "angle": "選び方訴求",
+      "headline": "違いが分かる選び方の見出し",
+      "subheadline": "3つの判断軸を短く補足"
+    },
+    {
+      "angle": "ベネフィット訴求",
+      "headline": "選んだ後の生活を想像できる見出し",
+      "subheadline": "効果を断定せず、続けやすさを伝える"
+    }
+  ],
+  "destinationUrl": "https://hidemina.github.io/my-skin-edit/lp/replace-with-category-5/"
+}

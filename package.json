@@ -11,7 +11,10 @@
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "production:check": "node scripts/prepare-beauty-production.mjs --check",
+    "production:prepare": "node scripts/prepare-beauty-production.mjs --write",
+    "production:test": "node --test tests/production-pipeline.test.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

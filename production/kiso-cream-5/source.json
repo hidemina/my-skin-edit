@@ -1,0 +1,144 @@
+{
+  "slug": "kiso-cream-5",
+  "category": "KISO美容クリーム",
+  "eyebrow": "KISO SKINCARE EDIT",
+  "titleLines": [
+    "成分も濃度も違うから、",
+    "KISO美容クリーム5選"
+  ],
+  "lead": "ハイドロキノン、レチノール、アゼライン酸。話題性だけで決めず、肌状態・使用する時間・成分濃度から、今の自分に取り入れやすい1本を整理します。",
+  "theme": {
+    "accent": "#8f2638",
+    "pale": "#f8edef"
+  },
+  "scenes": {
+    "hero": {
+      "image": "/assets/lp-scenes/kiso-cream-5/hero.webp",
+      "alt": "明るいドレッサーで肌を確認する30代の日本人女性"
+    },
+    "concern": {
+      "image": "/assets/lp-scenes/kiso-cream-5/concern.webp",
+      "alt": "頬の色むらやキメを鏡で確認する30代の日本人女性",
+      "titleLines": [
+        "成分が話題でも、",
+        "今の肌に合うとは限らない。"
+      ],
+      "body": "気になる部分が同じでも、肌の乾燥しやすさや成分の使用経験は人それぞれ。高濃度だけを基準にせず、公式の使用方法と注意事項まで見て選びます。",
+      "accent": "まずは、使い続けられる濃度と使い方から。"
+    },
+    "benefit": {
+      "image": "/assets/lp-scenes/kiso-cream-5/benefit.webp",
+      "alt": "自分に合うスキンケアを選べて穏やかに微笑む30代の日本人女性",
+      "titleLines": [
+        "違いがわかると、",
+        "夜のケアに迷いにくい。"
+      ],
+      "body": "夜だけの部分使いか、朝晩使えるクリームか。目的と使用頻度を先に決めて、毎日のケアへ無理なく取り入れられる候補を絞ります。",
+      "accent": "強さではなく、今の肌との相性で選ぶ。"
+    }
+  },
+  "selectionAxes": [
+    {
+      "label": "目的",
+      "description": "乾燥によるくすみ、ハリ、皮脂とのバランス"
+    },
+    {
+      "label": "濃度",
+      "description": "成分の使用経験と肌状態に合うか"
+    },
+    {
+      "label": "使い方",
+      "description": "夜の部分使いか、朝晩のケアか"
+    }
+  ],
+  "products": [
+    {
+      "id": "kiso-phq2",
+      "name": "KISO ハイドロクリーム PHQ-2",
+      "image": "/assets/products/kiso-cream-5/01.jpg",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B8B4U+FK93YY+3OIU+BW8O2&a8ejpredirect=https%3A%2F%2Fkisocare.co.jp%2Fc%2Ftype%2Fnormal%2Fkiso-k33",
+      "merchant": "KISOCARE公式",
+      "specs": [
+        "30g",
+        "純ハイドロキノン2％",
+        "夜の部分使い"
+      ],
+      "recommendedFor": "ハイドロキノン配合クリームを、PHQ-8より低い濃度から検討したい人。",
+      "sourceUrl": "https://kisocare.co.jp/c/type/normal/kiso-k33"
+    },
+    {
+      "id": "kiso-phq8",
+      "name": "KISO ハイドロクリーム PHQ-8",
+      "image": "/assets/products/kiso-cream-5/02.jpg",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B8B4U+FK93YY+3OIU+BW8O2&a8ejpredirect=https%3A%2F%2Fkisocare.co.jp%2Fc%2Fitem%2Fspotcream%2Fkiso-k38",
+      "merchant": "KISOCARE公式",
+      "specs": [
+        "20g",
+        "純ハイドロキノン8％",
+        "普通肌向け・夜の部分使い"
+      ],
+      "recommendedFor": "公式の対象肌・使用方法・注意事項を確認したうえで、高濃度タイプを比較したい人。",
+      "sourceUrl": "https://kisocare.co.jp/c/item/spotcream/kiso-k38"
+    },
+    {
+      "id": "kiso-re02",
+      "name": "KISO REショットクリーム 0.2％",
+      "image": "/assets/products/kiso-cream-5/03.jpg",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B8B4U+FK93YY+3OIU+BW8O2&a8ejpredirect=https%3A%2F%2Fkisocare.co.jp%2Fc%2Ftype%2Fdry%2Fkiso-k36",
+      "merchant": "KISOCARE公式",
+      "specs": [
+        "50g",
+        "レチノール0.2％",
+        "敏感肌向け表示"
+      ],
+      "recommendedFor": "ハリや化粧ノリを意識し、0.4％より低い濃度からレチノール配合クリームを比較したい人。",
+      "sourceUrl": "https://kisocare.co.jp/c/type/dry/kiso-k36"
+    },
+    {
+      "id": "kiso-re04",
+      "name": "KISO REクリーム 0.4％",
+      "image": "/assets/products/kiso-cream-5/04.jpg",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B8B4U+FK93YY+3OIU+BW8O2&a8ejpredirect=https%3A%2F%2Fkisocare.co.jp%2Fc%2Fitem%2Fcream%2Fkiso-k63",
+      "merchant": "KISOCARE公式",
+      "specs": [
+        "50g",
+        "レチノール0.4％",
+        "普通肌向け表示"
+      ],
+      "recommendedFor": "レチノール配合化粧品の使用経験があり、公式の使用方法を守って濃度違いを比べたい人。",
+      "sourceUrl": "https://kisocare.co.jp/c/item/cream/kiso-k63"
+    },
+    {
+      "id": "kiso-az15",
+      "name": "KISO バランシングクリーム AZ 15％",
+      "image": "/assets/products/kiso-cream-5/05.jpg",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B8B4U+FK93YY+3OIU+BW8O2&a8ejpredirect=https%3A%2F%2Fkisocare.co.jp%2Fc%2Fcomponent%2Fazelaicacid%2Fkiso-k57",
+      "merchant": "KISOCARE公式",
+      "specs": [
+        "20g",
+        "アゼライン酸15％",
+        "朝晩使用"
+      ],
+      "recommendedFor": "皮脂と水分のバランスやキメの乱れが気になり、レチノール以外の整肌成分も比べたい人。",
+      "sourceUrl": "https://kisocare.co.jp/c/component/azelaicacid/kiso-k57"
+    }
+  ],
+  "pins": [
+    {
+      "angle": "悩み訴求",
+      "headline": "成分は気になる。でも、どれを選ぶ？",
+      "subheadline": "ハイドロキノン・レチノール・アゼライン酸を整理"
+    },
+    {
+      "angle": "選び方訴求",
+      "headline": "濃度だけで決めない KISO美容クリーム5選",
+      "subheadline": "肌状態・使用時間・成分経験から比較"
+    },
+    {
+      "angle": "ベネフィット訴求",
+      "headline": "夜のケアに、もう迷わない。",
+      "subheadline": "今の肌へ無理なく取り入れやすい1本を探す"
+    }
+  ],
+  "destinationUrl": "https://hidemina.github.io/my-skin-edit/lp/kiso-cream-5/"
+}
