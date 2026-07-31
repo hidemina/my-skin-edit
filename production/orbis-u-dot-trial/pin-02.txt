@@ -2,8 +2,10 @@
 
 説明文：洗う・うるおす・保湿する。1品の印象だけでなく、朝晩の手順として続けられそうかを7日間試すセットです。現行セット内容と初回限定条件を公式情報で確認しました。PR・アフィリエイト広告を含みます。画像の女性はAIで生成した架空の成人モデルです。
 
-リンク：https://hidemina.github.io/my-skin-edit/lp/orbis-u-dot-trial/?utm_source=pinterest&utm_medium=organic&utm_campaign=orbis_u_dot_trial_20260731&utm_content=pin02_routine
+リンク：https://hidemina.github.io/my-skin-edit/lp/orbis-u-dot-trial/?utm_source=pinterest&utm_medium=organic&utm_campaign=orbis_u_dot_trial_20260731&utm_content=pin02_routine_v3
 
 ボード：大人のスキンケア選び
 
 代替テキスト：肌とスキンケア手順を確認する40代の架空の日本人女性と、朝晩3ステップ7日分を訴求する縦長画像
+
+画像：public/pins/orbis-u-dot-trial-v3-02.png

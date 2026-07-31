@@ -2,8 +2,10 @@
 
 説明文：化粧水だけを変える前に、洗顔料・化粧水・保湿クリームを朝晩の3ステップで試す選び方。オルビスユー ドットの初回限定7日間体験セットの内容、価格、購入条件を公式情報で整理しました。PR・アフィリエイト広告を含みます。画像の女性はAIで生成した架空の成人モデルです。
 
-リンク：https://hidemina.github.io/my-skin-edit/lp/orbis-u-dot-trial/?utm_source=pinterest&utm_medium=organic&utm_campaign=orbis_u_dot_trial_20260731&utm_content=pin01_problem
+リンク：https://hidemina.github.io/my-skin-edit/lp/orbis-u-dot-trial/?utm_source=pinterest&utm_medium=organic&utm_campaign=orbis_u_dot_trial_20260731&utm_content=pin01_problem_v3
 
 ボード：大人のスキンケア選び
 
 代替テキスト：朝のドレッサーでスキンケアを選ぶ40代の架空の日本人女性と、オルビスユー ドット7日間体験セットを紹介する縦長画像
+
+画像：public/pins/orbis-u-dot-trial-v3-01.png
