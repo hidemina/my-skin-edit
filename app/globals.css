@@ -147,6 +147,12 @@ a {
   background: linear-gradient(150deg, #f8e6e1, #fff 64%);
 }
 
+.guide-card.trial {
+  background:
+    linear-gradient(90deg, rgba(255, 250, 246, .97), rgba(255, 250, 246, .55)),
+    url("/assets/lp-scenes/orbis-u-dot-trial/hero-v1.png") 74% 28% / cover;
+}
+
 .guide-status {
   padding: 6px 11px;
   border-radius: 999px;

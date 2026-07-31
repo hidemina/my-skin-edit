@@ -24,6 +24,13 @@ export default function Home() {
           <h2>商品テーマから選ぶ</h2>
         </div>
         <div className="guide-grid">
+          <a className="guide-card trial" href="/lp/orbis-u-dot-trial/">
+            <span className="guide-status">PR・TRIAL SET</span>
+            <small>いきなり本品を買う前に</small>
+            <h3>オルビスユー ドット<br />まず7日間試す</h3>
+            <p>洗顔料・化粧水・保湿クリームを、朝晩の3ステップとして試せる初回限定セット。</p>
+            <strong>セット内容を見る →</strong>
+          </a>
           <a className="guide-card cream" href="/lp/sensitive-moisturizer-5/">
             <span className="guide-status">NEW</span>
             <small>化粧水のあと、うるおいを守る</small>

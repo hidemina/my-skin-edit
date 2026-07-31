@@ -1,0 +1,28 @@
+{
+  "slug": "orbis-u-dot-trial",
+  "title": "オルビスユー ドット7日間体験セット",
+  "updated_at": "2026-07-31",
+  "affiliate_network": "felmat",
+  "program_id": "4981",
+  "affiliate_url": "https://t.felmat.net/fmcl?ak=J4981V.1.7111727B.D139341N",
+  "impression_pixel": "https://t.felmat.net/fmimp/J4981V.7111727B.D139341N",
+  "official_landing_page": "https://pr.orbis.co.jp/cosmetics/udot/100/",
+  "official_offer": {
+    "price_jpy_tax_included": 980,
+    "eligibility": "オルビス通販初回限定・お一人様1点限り・数量限定",
+    "items": [
+      "フォーミングウォッシュ 14g",
+      "エッセンスローション 20mL",
+      "クリームモイスチャライザー 9g",
+      "リンクルブライトセラム 7g",
+      "オフクリーム 1包",
+      "オリジナル吸水アームバンド"
+    ]
+  },
+  "creative": {
+    "audience": "40〜50代女性",
+    "concept": "いきなり本品を買う前に、朝晩の3ステップを7日間試す",
+    "ai_model_disclosure": true,
+    "official_product_assets_are_unmodified": true
+  }
+}

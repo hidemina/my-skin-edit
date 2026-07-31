@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000,initial-scale=1">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1000px;height:1500px;overflow:hidden}
+  body{font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;color:#202b43;background:#fbf6f1}
+  .pin{position:relative;width:1000px;height:1500px;overflow:hidden;background:#fbf6f1}
+  .photo{position:absolute;inset:0}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,246,241,.98) 0%,rgba(251,246,241,.92) 47%,rgba(251,246,241,.16) 72%,rgba(251,246,241,.02) 100%)}
+  .copy{position:absolute;z-index:2;left:54px;top:54px;width:560px}
+  .brand{font:500 30px/1.2 Georgia,serif;letter-spacing:.18em}
+  .tagline{margin-top:9px;font-size:17px;letter-spacing:.18em}
+  .rule{width:80px;height:1px;margin:25px 0 55px;background:#8e1735}
+  .kicker{color:#8e1735;font:700 18px/1.5 "Yu Gothic","Noto Sans JP",sans-serif;letter-spacing:.13em}
+  h1{margin:17px 0 26px;font-weight:500;font-size:60px;line-height:1.43;letter-spacing:.035em}
+  h1 span{display:block}
+  h1 em{display:block;color:#8e1735;font-style:normal;font-size:86px;line-height:1.2}
+  .lead{margin:0;max-width:530px;font-size:25px;line-height:1.7}
+  .cta{display:inline-flex;margin-top:32px;padding:20px 34px;background:linear-gradient(135deg,#8e1735,#bd3157);color:white;font:700 24px/1.2 "Yu Gothic","Noto Sans JP",sans-serif;letter-spacing:.05em}
+  .cta:after{content:"→";margin-left:24px}
+  .product{position:absolute;z-index:3;left:54px;right:54px;bottom:58px;height:445px;overflow:hidden;border:8px solid rgba(255,255,255,.92);background:#fff;box-shadow:0 20px 60px rgba(32,43,67,.18)}
+  .product img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .pr{position:absolute;z-index:5;right:28px;bottom:20px;color:#5c6473;font:700 18px/1 "Yu Gothic",sans-serif;letter-spacing:.12em}
+  .v2 .photo img{object-position:34% center}
+  .v2 .wash{background:linear-gradient(180deg,rgba(251,246,241,.05) 0%,rgba(251,246,241,.08) 36%,rgba(251,246,241,.96) 58%,#fbf6f1 100%)}
+  .v2 .copy{left:50px;top:54px;width:900px;text-align:center}
+  .v2 .rule{margin:25px auto 40px}
+  .v2 h1{font-size:54px;line-height:1.38}
+  .v2 h1 em{font-size:92px}
+  .v2 .lead{margin:auto;max-width:760px}
+  .v2 .product{height:375px}
+  .v3 .photo img{object-position:66% center}
+  .v3 .wash{background:linear-gradient(90deg,rgba(251,246,241,.98),rgba(251,246,241,.94) 49%,rgba(251,246,241,.12) 73%)}
+  .v3 h1{font-size:56px}
+  .v3 h1 em{font-size:80px}
+  .v3 .lead{max-width:560px;font-size:21px;white-space:nowrap}
+  .v3 .product{height:410px;left:420px;right:36px;bottom:64px}
+  .offer{display:none}
+  .v3 .offer{display:block;position:absolute;z-index:4;left:54px;bottom:105px;width:330px}
+  .v3 .price{color:#8e1735;font:500 106px/.9 Georgia,serif}
+  .v3 .price small{font:700 22px/1 "Yu Gothic",sans-serif}
+  .v3 .offer p{font:700 20px/1.6 "Yu Gothic",sans-serif}
+  .base .copy,.base .product,.base .offer,.base .pr{display:none}
+</style>
+</head>
+<body>
+<article class="pin" id="pin">
+  <div class="photo"><img id="photo" alt=""></div>
+  <div class="wash"></div>
+  <div class="copy">
+    <div class="brand">MY SKIN EDIT</div>
+    <div class="tagline">肌に、いいほう。</div>
+    <div class="rule"></div>
+    <div class="kicker" id="kicker"></div>
+    <h1 id="headline"></h1>
+    <p class="lead" id="lead"></p>
+    <div class="cta" id="cta"></div>
+  </div>
+  <div class="product"><img id="product" alt="オルビスユー ドット7日間体験セット"></div>
+  <div class="offer"><div class="price">980<small>円（税込）</small></div><p>初回限定・送料無料<br>定期購入ではありません</p></div>
+  <div class="pr">PR / AI MODEL</div>
+</article>
+<script>
+const variants={
+  1:{
+    cls:"v1",
+    photo:"../../public/assets/lp-scenes/orbis-u-dot-trial/hero-v1.png",
+    kicker:"40代からのスキンケア",
+    headline:"<span>いきなり本品は</span><em>迷う。</em>",
+    lead:"まず7日間、朝晩の3ステップを試す。",
+    cta:"セット内容を見る",
+    product:"../../public/assets/products/orbis-u-dot-trial/official-limited-set.jpg"
+  },
+  2:{
+    cls:"v2",
+    photo:"../../public/assets/lp-scenes/orbis-u-dot-trial/concern-v1.png",
+    kicker:"化粧水だけ変える前に",
+    headline:"<span>洗う・うるおす・保湿する</span><em>3ステップ7日分</em>",
+    lead:"朝晩の使い方まで、自分の生活で試してから選ぶ。",
+    cta:"7日間セットを確認",
+    product:"../../public/assets/products/orbis-u-dot-trial/official-set-main.jpg"
+  },
+  3:{
+    cls:"v3",
+    photo:"../../public/assets/lp-scenes/orbis-u-dot-trial/benefit-v1.png",
+    kicker:"買ってから迷うより",
+    headline:"<span>試してから</span><em>選ぶ。</em>",
+    lead:"オルビスユー ドット 豪華7日間トライアルキット",
+    cta:"公式セットを見る",
+    product:"../../public/assets/products/orbis-u-dot-trial/official-limited-set.jpg"
+  }
+};
+const qs=new URLSearchParams(location.search);
+const v=variants[Number(qs.get("v")||1)];
+const pin=document.getElementById("pin");
+pin.classList.add(v.cls);
+if(qs.get("base")==="1") pin.classList.add("base");
+document.getElementById("photo").src=v.photo;
+document.getElementById("kicker").textContent=v.kicker;
+document.getElementById("headline").innerHTML=v.headline;
+document.getElementById("lead").textContent=v.lead;
+document.getElementById("cta").textContent=v.cta;
+document.getElementById("product").src=v.product;
+</script>
+</body>
+</html>
