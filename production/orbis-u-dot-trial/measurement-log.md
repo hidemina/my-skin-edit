@@ -1,7 +1,7 @@
 # オルビスユー ドット追加ピン計測ログ
 
 更新日: 2026-08-01
-状態: 計測期間待ち（勝ち訴求未判定）
+状態: 初動スナップショット記録済み（勝ち訴求未確定）
 
 ## 計測起点
 
@@ -15,14 +15,23 @@
 
 | ピン | 公開URL | utm_content | 表示 | 保存 | クリック | CTR |
 |---|---|---|---:|---:|---:|---:|
-| 04 | https://jp.pinterest.com/pin/893260907360824232/ | `pin04_40s_no_hesitation` | 未取得 | 未取得 | 未取得 | 未算出 |
-| 05 | https://jp.pinterest.com/pin/893260907360824380/ | `pin05_complete_basics_980` | 未取得 | 未取得 | 未取得 | 未算出 |
-| 06 | https://jp.pinterest.com/pin/893260907360824430/ | `pin06_decide_after_7days` | 未取得 | 未取得 | 未取得 | 未算出 |
-| 07 | https://jp.pinterest.com/pin/893260907360824459/ | `pin07_simple_routine_order` | 未取得 | 未取得 | 未取得 | 未算出 |
-| 08 | https://jp.pinterest.com/pin/893260907360824531/ | `pin08_full_sequence_trial` | 未取得 | 未取得 | 未取得 | 未算出 |
-| 09 | https://jp.pinterest.com/pin/893260907360824607/ | `pin09_one_time_no_subscription` | 未取得 | 未取得 | 未取得 | 未算出 |
+| 04 | https://jp.pinterest.com/pin/893260907360824232/ | `pin04_40s_no_hesitation` | 4 | 0 | 0 | 0.0% |
+| 05 | https://jp.pinterest.com/pin/893260907360824380/ | `pin05_complete_basics_980` | 2 | 0 | 0 | 0.0% |
+| 06 | https://jp.pinterest.com/pin/893260907360824430/ | `pin06_decide_after_7days` | 5 | 0 | 0 | 0.0% |
+| 07 | https://jp.pinterest.com/pin/893260907360824459/ | `pin07_simple_routine_order` | 5 | 0 | 0 | 0.0% |
+| 08 | https://jp.pinterest.com/pin/893260907360824531/ | `pin08_full_sequence_trial` | 6 | 0 | 1 | 16.7% |
+| 09 | https://jp.pinterest.com/pin/893260907360824607/ | `pin09_one_time_no_subscription` | 5 | 0 | 0 | 0.0% |
 
 CTRは `クリック ÷ 表示`。Pinterest画面の同一期間・同一指標で比較する。
+
+## 2026-08-01 初動スナップショット
+
+- Pinterest分析画面: `analytics.pinterest.com/overview/`、アカウント `MY SKIN EDIT｜大人のコスメ比較`
+- 期間: 過去7日間（2026/7/25〜2026/8/1）
+- 対象: オーガニック、自分のピン、Pinterest表示のトップピン表
+- ピン08（「化粧水だけじゃない｜洗顔から保湿まで7日間」）だけ外部クリック1件、表示6、CTR16.7%。
+- ピン04〜07・09は外部クリック0件。保存は6枚すべて0件。
+- ピン08は暫定候補に留める。表示6件のため、7〜14日データが揃うまで勝ち訴求とは確定しない。
 
 ## LP・GA4照合
 
@@ -32,6 +41,9 @@ CTRは `クリック ÷ 表示`。Pinterest画面の同一期間・同一指標�
 - CTA属性: `affiliate_network=felmat`, `product_id=orbis-u-dot-trial`
 - LP到達は、各URLの `utm_content` が保持されたページビューで確認する。
 - CTA到達率は、各UTMのLP到達数に対する `affiliate_click` 数で算出する。
+- GA4ホーム（過去7日間）: `affiliate_click` 17件。これはプロパティ全体の値であり、6ピン限定ではない。
+- GA4イベント詳細（2026/7/4〜2026/7/31）: `product_id=orbis-u-trial` は3件・2ユーザー。新規6ピンだけに帰属させない。
+- GA4で新規6ピンのUTM別LP到達数・CTA数を分離できるまで、勝ち判定には使わない。
 
 ## felmat照合
 
@@ -39,6 +51,7 @@ CTRは `クリック ÷ 表示`。Pinterest画面の同一期間・同一指標�
 - 計測ピクセル: `J4981V.7111727B.D139341N`
 - felmat側のクリック数はPinterestのクリック、GA4のCTAイベントと同一期間で照合する。
 - 数値が取得できない場合は推測で補完せず、「未取得」と記録する。
+- felmatパートナー管理画面は未ログインのため、現時点のfelmat集計クリック数は未取得。
 
 ## 勝ち訴求の判定ルール
 
