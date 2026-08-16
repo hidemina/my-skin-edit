@@ -47,9 +47,9 @@ export default function Home() {
           </a>
           <a className="guide-card uv" href="/lp/daily-uv-5/">
             <span className="guide-status">UV CARE</span>
-            <small>毎日用とレジャー用を整理</small>
-            <h3>30代の日焼け止め<br />5商品比較</h3>
-            <p>容量、落とし方、耐水性、香りを公式情報から比較。</p>
+            <small>顔用UVを、朝の役割から選ぶ</small>
+            <h3>顔用・化粧下地UV<br />5商品比較</h3>
+            <p>下地、薬用ケア、色補正、美容成分を公式情報から比較。</p>
             <strong>比較を見る →</strong>
           </a>
         </div>
