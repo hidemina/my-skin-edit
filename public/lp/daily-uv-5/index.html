@@ -36,23 +36,25 @@
     .hero-product img { display:block; width:100%; border-radius:6px; }
     .hero-product-1 { left:8%; top:18%; transform:rotate(-7deg); z-index:3; } .hero-product-2 { left:34%; top:9%; transform:rotate(3deg); z-index:2; }
     .hero-product-3 { right:5%; top:21%; transform:rotate(7deg); z-index:4; } .hero-product-4 { left:20%; bottom:3%; width:31%; transform:rotate(5deg); z-index:5; } .hero-product-5 { right:18%; bottom:1%; width:31%; transform:rotate(-5deg); z-index:6; }
-    .intro { width:min(1060px,calc(100% - 40px)); margin:0 auto; padding:98px 0 58px; display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; }
-    .intro h2,.section-title h2 { margin:0; font:500 clamp(32px,4.5vw,54px)/1.35 "Yu Mincho",serif; }
+    .intro { width:min(1060px,calc(100% - 40px)); margin:0 auto; padding:98px 0 58px; display:grid; grid-template-columns:1.18fr .82fr; gap:70px; }
+    .intro h2 { margin:0; font:500 clamp(32px,3.7vw,46px)/1.45 "Yu Mincho",serif; }
+    .section-title h2 { margin:0; font:500 clamp(32px,4.5vw,54px)/1.35 "Yu Mincho",serif; }
+    .headline-line { white-space:nowrap; }
     .intro p { margin:0; color:var(--muted); font-size:16px; line-height:2; }
     .chooser { width:min(1060px,calc(100% - 40px)); margin:0 auto 86px; display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     .choice { padding:28px 24px; text-decoration:none; border-right:1px solid var(--line); } .choice:last-child { border-right:0; } .choice span { color:var(--rose); font-size:11px; font-weight:800; letter-spacing:.1em; } .choice strong { display:block; margin-top:10px; font:500 21px/1.5 "Yu Mincho",serif; }
     .section { width:min(1120px,calc(100% - 40px)); margin:0 auto; padding:28px 0 96px; } .section-title { margin-bottom:36px; } .section-title p { max-width:48em; color:var(--muted); line-height:1.9; }
-    .table-wrap { overflow-x:auto; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); } table { width:100%; border-collapse:collapse; min-width:820px; } th,td { padding:20px 16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:14px; line-height:1.7; } thead th { font-size:12px; color:var(--muted); } tbody th { width:28%; } tbody th a { text-decoration-color:var(--rose); text-underline-offset:5px; }
+    .table-wrap { overflow-x:auto; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); } table { width:100%; border-collapse:collapse; min-width:820px; } th,td { padding:20px 16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:14px; line-height:1.7; } thead th { font-size:12px; color:var(--muted); } tbody th { width:28%; } tbody th a { text-decoration-color:var(--rose); text-underline-offset:5px; word-break:keep-all; overflow-wrap:normal; }
     .products { border-top:1px solid var(--line); } .product { display:grid; grid-template-columns:52px 34% 1fr; gap:34px; padding:66px 0; border-bottom:1px solid var(--line); }
     .product-index { color:var(--rose); font:500 14px Georgia,serif; } .product-image { display:flex; align-items:center; justify-content:center; min-height:430px; background:#fff; } .product-image img { width:100%; height:100%; object-fit:contain; }
     .product-body { padding:8px 0 0; } .product-label { margin:0 0 12px; color:var(--rose); font-size:12px; font-weight:800; letter-spacing:.12em; } .product h3 { margin:0; font:500 clamp(28px,3.5vw,42px)/1.4 "Yu Mincho",serif; }
     .product-short { margin:12px 0 20px; font:500 19px/1.6 "Yu Mincho",serif; color:var(--gold); } .specs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px; } .specs span { padding:7px 10px; border:1px solid var(--line); font-size:12px; }
     dl { margin:0 0 28px; } dl div { display:grid; grid-template-columns:110px 1fr; gap:16px; padding:14px 0; border-top:1px solid var(--line); } dt { color:var(--muted); font-size:12px; font-weight:700; } dd { margin:0; font-size:14px; line-height:1.8; }
     .cta { display:inline-flex; align-items:center; justify-content:center; min-height:54px; padding:14px 20px; color:#fff; background:var(--rose); text-decoration:none; font-weight:800; } .shop-note { margin:10px 0 0; color:var(--muted); font-size:11px; line-height:1.6; }
-    .notice { padding:28px; background:#efe7df; color:var(--muted); font-size:13px; line-height:1.9; } .sources { padding-left:20px; color:var(--muted); font-size:13px; line-height:1.8; } .sources li { margin:9px 0; }
+    .notice { padding:28px; background:#efe7df; color:var(--muted); font-size:13px; line-height:1.9; } .notice-sentence { display:block; } .sources { padding-left:20px; color:var(--muted); font-size:13px; line-height:1.8; } .sources li { margin:9px 0; }
     footer { padding:44px max(20px,calc((100% - 1120px)/2)); background:var(--ink); color:rgba(255,255,255,.75); font-size:12px; } footer strong { color:#fff; font:500 18px Georgia,serif; letter-spacing:.09em; } footer p { max-width:68em; line-height:1.8; } footer nav { display:flex; flex-wrap:wrap; gap:18px; margin-top:18px; }
-    @media(max-width:800px) { .site-head nav { display:none; } .hero { grid-template-columns:1fr; min-height:0; } .hero-copy { padding:48px 0 38px; } .hero-visual { min-height:500px; } .intro { grid-template-columns:1fr; gap:22px; padding:68px 0 44px; } .chooser { grid-template-columns:1fr; } .choice { border-right:0; border-bottom:1px solid var(--line); } .choice:last-child { border-bottom:0; } .product { grid-template-columns:32px 1fr; gap:18px; } .product-image { grid-column:2; min-height:330px; } .product-body { grid-column:2; } }
-    @media(max-width:400px) { .site-head,.hero,.intro,.chooser,.section { width:calc(100% - 28px); } h1 { font-size:42px; } .hero-visual { min-height:420px; } .hero-visual::before { font-size:72px; } .product { grid-template-columns:22px 1fr; } .product-image { min-height:290px; } dl div { grid-template-columns:1fr; gap:6px; } .cta { width:100%; font-size:14px; text-align:center; } }
+    @media(max-width:800px) { .site-head nav { display:none; } .hero { grid-template-columns:1fr; min-height:0; } .hero-copy { padding:48px 0 38px; } h1 { font-size:clamp(36px,9vw,44px); line-height:1.35; } .hero-visual { min-height:500px; } .intro { grid-template-columns:1fr; gap:22px; padding:68px 0 44px; } .intro h2 { font-size:clamp(24px,6.8vw,32px); line-height:1.5; letter-spacing:-.04em; } .chooser { grid-template-columns:1fr; } .choice { border-right:0; border-bottom:1px solid var(--line); } .choice:last-child { border-bottom:0; } .product { grid-template-columns:32px 1fr; gap:18px; } .product-image { grid-column:2; min-height:330px; } .product-body { grid-column:2; } .product h3 { font-size:clamp(25px,5.4vw,34px); line-height:1.5; letter-spacing:-.035em; word-break:keep-all; overflow-wrap:normal; } .notice-sentence + .notice-sentence { margin-top:.45em; } }
+    @media(max-width:400px) { .site-head,.hero,.intro,.chooser,.section { width:calc(100% - 28px); } .hero-visual { min-height:420px; } .hero-visual::before { font-size:72px; } .product { grid-template-columns:22px 1fr; } .product-image { min-height:290px; } dl div { grid-template-columns:1fr; gap:6px; } .cta { width:100%; font-size:14px; text-align:center; } .notice { padding:22px 18px; } }
   </style>
 </head>
 <body>
@@ -65,14 +67,14 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">FACE UV / 2026</p>
-        <h1>日焼け止めを、<br>朝の下地まで。</h1>
+        <h1><span class="headline-line">日焼け止めを、</span><br><span class="headline-line">朝の下地まで。</span></h1>
         <p class="lead">守るだけで選ぶと、朝の一本は決まりません。下地、色補正、薬用ケア、美容成分。5つの顔用UVを、何を任せたいかで比べました。</p>
         <a class="hero-cta" href="#compare">5商品を比べる →</a>
       </div>
       <div class="hero-visual" aria-label="今回比較する顔用UV5商品"><figure class="hero-product hero-product-1"><img src="../../assets/products/face-uv-premium-5/01-sk2.jpg" alt=""></figure><figure class="hero-product hero-product-2"><img src="../../assets/products/face-uv-premium-5/02-orbis.jpg" alt=""></figure><figure class="hero-product hero-product-3"><img src="../../assets/products/face-uv-premium-5/03-laroche.jpg" alt=""></figure><figure class="hero-product hero-product-4"><img src="../../assets/products/face-uv-premium-5/04-lancome.jpg" alt=""></figure><figure class="hero-product hero-product-5"><img src="../../assets/products/face-uv-premium-5/05-decorte.jpg" alt=""></figure></div>
     </section>
     <section class="intro" id="choose">
-      <h2>最初に決めるのは、<br>SPFの数字ではなく<br>朝、どこまで任せたいか。</h2>
+      <h2><span class="headline-line">最初に決めるのは、</span><br><span class="headline-line">SPFの数字ではなく</span><br><span class="headline-line">朝、どこまで任せたいか。</span></h2>
       <p>全部を同じ物差しで並べると、また迷います。日焼け止めのあとに下地を重ねたくない。薬用ケアも一本へまとめたい。色補正まで済ませたい。まず自分の朝に近いものから見てください。</p>
     </section>
     <nav class="chooser" aria-label="目的から選ぶ">
@@ -91,14 +93,14 @@
       </tr>
 
       <tr>
-        <th scope="row"><a href="#product-orbis">オルビス リンクルブライトUVプロテクター N</a></th>
+        <th scope="row"><a href="#product-orbis">オルビス リンクルブライトUV<wbr>プロテクター N</a></th>
         <td>薬用顔用UV</td>
         <td>薬用ケアも選びたい</td>
         <td>50g / SPF50+・PA++++ / 医薬部外品</td>
       </tr>
 
       <tr>
-        <th scope="row"><a href="#product-laroche">ラ ロッシュ ポゼ UVイデア XL プロテクショントーンアップ ローズ+</a></th>
+        <th scope="row"><a href="#product-laroche">ラ ロッシュ ポゼ UVイデア XL プロテクション<wbr>トーンアップ ローズ+</a></th>
         <td>トーンアップUV</td>
         <td>自然なツヤ感を足す</td>
         <td>30mL / SPF50+ / ローズ+など4色</td>
@@ -149,7 +151,7 @@
         </a>
         <div class="product-body">
           <p class="product-label">薬用ケアも選びたい</p>
-          <h3>オルビス リンクルブライトUVプロテクター N</h3>
+          <h3>オルビス リンクルブライトUV<wbr>プロテクター N</h3>
           <p class="product-short">UVと薬用ケアを一本に</p>
           <div class="specs"><span>50g</span><span>SPF50+・PA++++</span><span>医薬部外品</span></div>
           <dl>
@@ -169,7 +171,7 @@
         </a>
         <div class="product-body">
           <p class="product-label">自然なツヤ感を足す</p>
-          <h3>ラ ロッシュ ポゼ UVイデア XL プロテクショントーンアップ ローズ+</h3>
+          <h3>ラ ロッシュ ポゼ UVイデア XL プロテクション<wbr>トーンアップ ローズ+</h3>
           <p class="product-short">くすみを色で整える朝に</p>
           <div class="specs"><span>30mL</span><span>SPF50+</span><span>ローズ+など4色</span></div>
           <dl>
@@ -224,7 +226,7 @@
     </div>
     </section>
     <section class="section">
-      <div class="notice"><strong>選定・表現について</strong><br>このページは、メーカー公式情報、ブランド提供情報、楽天市場APIの販売データをもとに候補を整理した広告ページです。使用感や肌への相性には個人差があります。「必ず焼けない」「必ず合う」といった保証はしません。肌に異常が生じた場合は使用を中止し、商品表示に従ってください。</div>
+      <div class="notice"><strong>選定・表現について</strong><br><span class="notice-sentence">このページは、メーカー公式情報、ブランド提供情報、楽天市場APIの販売データをもとに候補を整理した広告ページです。</span><span class="notice-sentence">使用感や肌への相性には個人差があります。</span><span class="notice-sentence">「必ず焼けない」「必ず合う」といった保証はしません。</span><span class="notice-sentence">肌に異常が生じた場合は使用を中止し、商品表示に従ってください。</span></div>
       <div class="section-title" style="margin-top:46px"><h2>確認した情報</h2></div>
       <ol class="sources"><li><a href="https://www.sk-ii.jp/product/genoptics-cc-primer" rel="noopener" target="_blank">SK-II ジェノプティクス CC プライマー</a> — @cosme顔用UVランキング1位を2026-07-24更新ページで確認。</li><li><a href="https://www.orbis.co.jp/small/1161023/" rel="noopener" target="_blank">オルビス リンクルブライトUVプロテクター N</a> — 楽天APIでオルビス公式ショップの新商品を確認。</li><li><a href="https://www.laroche-posay.jp/product/toneup-uv.html" rel="noopener" target="_blank">ラ ロッシュ ポゼ UVイデア XL プロテクショントーンアップ ローズ+</a> — 楽天日焼け止めランキング上位と公式楽天店レビューを確認。</li><li><a href="https://www.lancome.jp/skincare/by-product-category/uv-care/absolue-the-uv-cream/JP-LAN-000725.html" rel="noopener" target="_blank">ランコム アプソリュ ザ UV クリーム</a> — @cosme顔用UVランキング7位とランコム公式楽天店を確認。</li><li><a href="https://www.decorte.com/site/g/gJSVG001/" rel="noopener" target="_blank">コスメデコルテ UV コンフォート トーンアップCC</a> — @cosme 2026年上半期新作ベストBB・CCクリーム第1位を確認。</li><li><a href="https://ranking.rakuten.co.jp/daily/503054/" target="_blank" rel="noopener">楽天市場 日焼け止めランキング</a> — 2026-08-16確認。順位は変動するため本文へ固定していません。</li><li><a href="https://www.cosme.net/categories/item/1037/ranking/" target="_blank" rel="noopener">@cosme 顔用UVランキング</a> — 最新公開ページを2026-08-16確認。</li></ol>
     </section>
